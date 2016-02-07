@@ -1,0 +1,4 @@
+<Files "mapsvg.js">
+Order Allow,Deny
+Deny from all
+</Files>
