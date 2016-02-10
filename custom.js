@@ -15,7 +15,7 @@ function addItem() {
   var delete_link = '<a href="#" class="link-delete">(Delete)</a>'
   $("ol").append("<li>" + text + " " + delete_link + "</li>");
   //
-  numItems = $("li").length;
+  numItems = $("li").length-3;
   $(".total").html(numItems + " items");
 
   // Challenge: Differentiate between 1 item vs. more items
@@ -35,7 +35,7 @@ function deleteItem(event) {
   console.info(event);
   // $(event.target).remove();
   $(event.target).parent().remove();
-  numItems = $("li").length;
+  numItems = $("li").length-3;
   $(".total").html(numItems + " items");
   if (numItems == 1) {
     $(".total").html(numItems + " item");
